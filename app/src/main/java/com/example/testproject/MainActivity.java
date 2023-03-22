@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         View viewpopup = layoutInflater.inflate(R.layout.newtodo, null);
 
-        PopupWindow popupWindow = new PopupWindow(viewpopup, 1000, 500, true);
+        PopupWindow popupWindow = new PopupWindow(viewpopup, 1000, 600, true);
 
-        popupWindow.showAtLocation(view, Gravity.BOTTOM, 0, 0);
+        popupWindow.showAtLocation(view, Gravity.BOTTOM, -100, 0);
     }
 }
