@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -41,12 +42,13 @@
         tools:layout_editor_absoluteY="303dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAddToList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/etDescription"
         android:layout_marginTop="20dp"
         android:text="Add"
         tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_editor_absoluteY="401dp"
+        />
 </RelativeLayout>
