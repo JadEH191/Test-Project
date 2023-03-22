@@ -1,10 +1,10 @@
 package com.example.testproject;
 
-public class List {
+public class Items {
     String title;
     String description;
 
-    public List(String title, String description) {
+    public Items(String title, String description) {
         this.title = title;
         this.description = description;
     }

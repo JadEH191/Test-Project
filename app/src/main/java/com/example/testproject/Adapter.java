@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     Context context;
-    List<List> items;
+    List<Items> items;
 
-    public Adapter(Context context, List<List> items) {
+    public Adapter(Context context, List<Items> items) {
         this.context = context;
         this.items = items;
     }
@@ -26,11 +26,12 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        holder.tvTitle.setText(items.get(position).getTitle());
+        holder.tvDescription.setText(items.get(position).getDescription());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return items.size();
     }
 }
